@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Mist | A 2D RPG Puzzle Adventure</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0a0f0c;
+    color:white;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+h1,h2,h3{
+    margin-bottom:20px;
+}
+
+p{
+    margin-bottom:15px;
+    color:#d7d7d7;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px 10px 0 0;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#67d46e;
+    transform:translateY(-2px);
+}
+
+.secondary{
+    background:#222;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+    url("YOUR_POSTER_IMAGE.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.hero h1{
+    font-size:64px;
+    margin-bottom:15px;
+    color:#ffffff;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111814;
+    padding:25px;
+    border-radius:14px;
+    border:1px solid #1f2a23;
+}
+
+.card h3{
+    color:#72ff8f;
+}
+
+.screenshot{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.about-dev{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.about-dev img{
+    width:100%;
+    border-radius:14px;
+}
+
+footer{
+    background:#050805;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.small{
+    font-size:14px;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:44px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.about-dev{
+    grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-content">
+<h1>The Mist</h1>
+<p>A 2D RPG puzzle adventure where you save the animals from corruption spreading throughout the land.</p>
+
+<a href="YOUR_ITCH_IO_LINK" class="btn">Download on Itch.io</a>
+<a href="#screenshots" class="btn secondary">View Screenshots</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section>
+<div class="container">
+<h2>About The Game</h2>
+
+<p>
+A dark mist has spread across the forest, corrupting wildlife and poisoning the land.
+Take control of Eryn and their loyal hamster Milo on a journey to uncover the source of the corruption.
+Explore ancient temples, gather teammates, unlock elemental powers, and defeat the evil rat Nox.
+</p>
+
+</div>
+</section>
+
+<!-- FEATURES -->
+<section class="secondary">
+<div class="container">
+<h2>Key Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Turn-Based Combat</h3>
+<p>Strategic battles against corrupted wildlife using reactive enemy AI.</p>
+</div>
+
+<div class="card">
+<h3>Procedural Temples</h3>
+<p>Every temple layout is unique, giving each run fresh exploration and challenge.</p>
+</div>
+
+<div class="card">
+<h3>Elemental Powers</h3>
+<p>Unlock fire, wind and ice abilities to defeat enemies and access new paths.</p>
+</div>
+
+<div class="card">
+<h3>Dual Gameplay</h3>
+<p>Play top-down exploration sections and hamster platforming sequences.</p>
+</div>
+
+<div class="card">
+<h3>Exploration & Secrets</h3>
+<p>Discover hidden paths, treasure chests and optional challenges.</p>
+</div>
+
+<div class="card">
+<h3>Level Up & Gear</h3>
+<p>Gain experience, improve stats and equip stronger items.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section id="screenshots">
+<div class="container">
+<h2>Screenshots</h2>
+
+<div class="gallery">
+
+<img src="SCREENSHOT_1.png" class="screenshot" alt="Screenshot 1">
+<img src="SCREENSHOT_2.png" class="screenshot" alt="Screenshot 2">
+<img src="SCREENSHOT_3.png" class="screenshot" alt="Screenshot 3">
+<img src="SCREENSHOT_4.png" class="screenshot" alt="Screenshot 4">
+
+</div>
+</div>
+</section>
+
+<!-- STORY -->
+<section class="secondary">
+<div class="container">
+<h2>Story</h2>
+
+<p>
+The once peaceful forest is falling into darkness. Animals have become hostile, ancient temples lie dormant, and corruption spreads deeper every day.
+With Milo by your side, you must brave dangerous lands and restore balance before it is too late.
+</p>
+
+</div>
+</section>
+
+<!-- DEVELOPER -->
+<section>
+<div class="container">
+<h2>Developer</h2>
+
+<div class="about-dev">
+
+<img src="YOUR_PHOTO.jpg" alt="Developer Photo">
+
+<div>
+<h3>Brona Keevers-Roux</h3>
+<p>Computer Science – Game Development</p>
+<p>Supervisor: Brendan Lyng</p>
+<p>The Mist was developed in Unity for Windows PC as a final year project focused on RPG systems, procedural generation, puzzle design and reactive AI.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="secondary">
+<div class="container" style="text-align:center;">
+<h2>Play The Mist</h2>
+<p>Download the Windows build on Itch.io.</p>
+
+<a href="YOUR_ITCH_IO_LINK" class="btn">Download Now</a>
+</div>
+</section>
+
+<footer>
+<p>The Mist © 2026 Brona Keevers-Roux</p>
+<p class="small">Built with Unity • Hosted with GitHub Pages</p>
+</footer>
+
+</body>
+</html>
