@@ -88,10 +88,10 @@ p{
 .feature-video{
     width:100%;
     max-width:800px;
+    aspect-ratio:16/9;
     margin:20px 0;
     border-radius:12px;
     border:1px solid #1f2a23;
-    background:#000;
 }
 
 .card{
@@ -143,6 +143,16 @@ footer{
     background:#050805;
     text-align:center;
     padding:40px 20px;
+}
+
+.email-link{
+    color:#ffd84d;
+    text-decoration:none;
+}
+
+.email-link:hover{
+    color:#fff08a;
+    text-decoration:underline;
 }
 
 .small{
