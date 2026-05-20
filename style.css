@@ -85,11 +85,53 @@ p{
     gap:25px;
 }
 
+.mechanic{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    margin-bottom:80px;
+    padding-bottom:40px;
+    border-bottom:1px solid #1f2a23;
+}
+
+.mechanic img{
+    width:50%;
+    border-radius:14px;
+    border:1px solid #1f2a23;
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.mechanic div{
+    width:50%;
+}
+
+.mechanic:nth-of-type(even){
+    flex-direction:row-reverse;
+}
+
+@media (max-width: 768px){
+
+    .mechanic,
+    .mechanic:nth-of-type(even){
+        flex-direction: column !important;
+    }
+
+    .mechanic img,
+    .mechanic div{
+        width: 100%;
+    }
+
+    .mechanic{
+        gap:20px;
+    }
+}
+
 .feature-video{
+    display:block;
     width:100%;
     max-width:800px;
     aspect-ratio:16/9;
-    margin:20px 0;
+    margin:20px auto;
     border-radius:12px;
     border:1px solid #1f2a23;
 }
