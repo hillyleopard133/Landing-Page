@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0a0f0c;
+    color:white;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+h1,h2,h3{
+    margin-bottom:20px;
+}
+
+p{
+    margin-bottom:15px;
+    color:#d7d7d7;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px 10px 0 0;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#67d46e;
+    transform:translateY(-2px);
+}
+
+.secondary{
+    background:#222;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+    url("Images/Poster cover image.png") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.hero h1{
+    font-size:64px;
+    margin-bottom:15px;
+    color:#ffffff;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.feature-video{
+    width:100%;
+    max-width:800px;
+    margin:20px 0;
+    border-radius:12px;
+    border:1px solid #1f2a23;
+    background:#000;
+}
+
+.card{
+    background:#111814;
+    padding:25px;
+    border-radius:14px;
+    border:1px solid #1f2a23;
+
+    text-decoration:none;
+    color:inherit;
+    display:block;
+
+    transition:0.25s ease;
+}
+
+.card h3{
+    color:#72ff8f;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#72ff8f;
+}
+.screenshot{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.about-dev{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.about-dev img{
+    width:100%;
+    border-radius:14px;
+}
+
+footer{
+    background:#050805;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.small{
+    font-size:14px;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:44px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.about-dev{
+    grid-template-columns:1fr;
+}
+
+}

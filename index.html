@@ -5,156 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Mist | A 2D RPG Puzzle Adventure</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<link rel="stylesheet" href="style.css">
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0a0f0c;
-    color:white;
-    line-height:1.6;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-section{
-    padding:80px 0;
-}
-
-h1,h2,h3{
-    margin-bottom:20px;
-}
-
-p{
-    margin-bottom:15px;
-    color:#d7d7d7;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 28px;
-    margin:10px 10px 0 0;
-    background:#4CAF50;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    transition:0.3s;
-    font-weight:bold;
-}
-
-.btn:hover{
-    background:#67d46e;
-    transform:translateY(-2px);
-}
-
-.secondary{
-    background:#222;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    background:
-    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
-    url("Poster cover image.png") center/cover no-repeat;
-}
-
-.hero-content{
-    max-width:650px;
-}
-
-.hero h1{
-    font-size:64px;
-    margin-bottom:15px;
-    color:#ffffff;
-}
-
-.hero p{
-    font-size:22px;
-    margin-bottom:25px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#111814;
-    padding:25px;
-    border-radius:14px;
-    border:1px solid #1f2a23;
-}
-
-.card h3{
-    color:#72ff8f;
-}
-
-.screenshot{
-    width:100%;
-    border-radius:12px;
-    display:block;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-}
-
-.about-dev{
-    display:grid;
-    grid-template-columns:250px 1fr;
-    gap:30px;
-    align-items:center;
-}
-
-.about-dev img{
-    width:100%;
-    border-radius:14px;
-}
-
-footer{
-    background:#050805;
-    text-align:center;
-    padding:40px 20px;
-}
-
-.small{
-    font-size:14px;
-    color:#aaa;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:44px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-.about-dev{
-    grid-template-columns:1fr;
-}
-
-}
-</style>
 </head>
 
 <body>
@@ -176,15 +28,20 @@ footer{
 <h2>About The Game</h2>
 
 <p>
-A dark mist has spread across the forest, corrupting wildlife and destabilising the land. You play as Eryn, accompanied by their loyal hamster Milo, on a journey to uncover and destroy the source of the corruption.
+A dark mist has spread across the forest, corrupting wildlife and destabilising the land. 
+You play as Erin, accompanied by their loyal hamster Milo, on a journey to uncover and destroy the source of the corruption.
 </p>
 
 <p>
-Explore a dangerous, atmospheric world filled with ancient elemental temples, hostile creatures, and hidden paths. Progress through the world by unlocking elemental powers that allow access to new areas and stronger enemies.
+Explore a dangerous, atmospheric world filled with ancient elemental temples, hostile creatures, and hidden paths. 
+Progress through the world by unlocking elemental powers that allow access to new areas and stronger enemies.
 </p>
 
 <p>
-The game features a dual gameplay system, combining top-down exploration and turn-based combat with side-scrolling sections where Milo can access small spaces to retrieve items and unlock progression paths. Elemental temples are generated using procedural generation, ensuring varied layouts and encounters each run, while combat is driven by a reactive AI system that adapts enemy behaviour based on player actions and battle conditions.
+The game features a dual gameplay system, combining top-down exploration and turn-based combat with side-scrolling sections where 
+Milo can access small spaces to retrieve items and unlock progression paths. Elemental temples are generated using procedural generation, 
+ensuring varied layouts and encounters each run, while combat is driven by a reactive AI system that adapts enemy behaviour based on 
+player actions and battle conditions.
 </p>
 
 <p>
@@ -198,38 +55,39 @@ Your journey ultimately leads to the corrupted heart of the forest, where the ev
 <section class="secondary">
 <div class="container">
 <h2>Key Features</h2>
+<h3>Click to learn more about each feature</h3>
 
 <div class="grid">
 
-<div class="card">
+<a href="combat.html" class="card">
 <h3>Turn-Based Combat</h3>
 <p>Strategic battles against corrupted wildlife using reactive enemy AI.</p>
-</div>
+</a>
 
-<div class="card">
+<a href="procedural.html" class="card">
 <h3>Procedural Temples</h3>
 <p>Every temple layout is unique, giving each run fresh exploration and challenge.</p>
-</div>
+</a>
 
-<div class="card">
+<a href="powers.html" class="card">
 <h3>Elemental Powers</h3>
 <p>Unlock fire, wind and ice abilities to defeat enemies and access new paths.</p>
-</div>
+</a>
 
-<div class="card">
+<a href="dual-gameplay.html" class="card">
 <h3>Dual Gameplay</h3>
 <p>Play top-down exploration sections and hamster platforming sequences.</p>
-</div>
+</a>
 
-<div class="card">
-<h3>Exploration & Secrets</h3>
-<p>Discover hidden paths, treasure chests and optional challenges.</p>
-</div>
+<a href="dialogue.html" class="card">
+<h3>Dialogue and quests</h3>
+<p> NPC dialogue unlocks quests, side quests, and world immersion. </p>
+</a>
 
-<div class="card">
+<a href="gear.html" class="card">
 <h3>Level Up & Gear</h3>
 <p>Gain experience, improve stats and equip stronger items.</p>
-</div>
+</a>
 
 </div>
 </div>
@@ -242,10 +100,13 @@ Your journey ultimately leads to the corrupted heart of the forest, where the ev
 
 <div class="gallery">
 
-<img src="screenshot-party.png" class="screenshot" alt="Party">
-<img src="screenshot-inventory.png" class="screenshot" alt="Inventory">
-<img src="screenshot-supplies-shop.png" class="screenshot" alt="Supplies Shop">
-<img src="screenshot-skilltree.png" class="screenshot" alt="Skill Tree">
+<img src="Screenshots/party.png" class="screenshot" alt="Party">
+<img src="Screenshots/inventory.png" class="screenshot" alt="Inventory">
+<img src="Screenshots/attributes.png" class="screenshot" alt="Attributes">
+<img src="Screenshots/skilltree.png" class="screenshot" alt="Skill Tree">
+<img src="Screenshots/combat.png" class="screenshot" alt="Combat">
+<img src="Screenshots/combat-item.png" class="screenshot" alt="Combat Item">
+<img src="Screenshots/supplies-shop.png" class="screenshot" alt="Supplies Shop">
 
 </div>
 </div>
@@ -257,19 +118,24 @@ Your journey ultimately leads to the corrupted heart of the forest, where the ev
 <h2>Story</h2>
 
 <p>
-The once peaceful forest is falling into darkness as a mysterious mist spreads across the land. Wildlife has been corrupted into hostile forms, ancient elemental temples have fallen silent, and the natural balance is collapsing.
+The once peaceful forest is falling into darkness as a mysterious mist spreads across the land. 
+Wildlife has been corrupted into hostile forms, ancient elemental temples have fallen silent, and the natural balance is collapsing.
 </p>
 
 <p>
-You play as Eryn, an adventurer drawn into the heart of the crisis, accompanied by Milo, a loyal hamster companion who proves essential in navigating the world’s hidden paths and forgotten structures.
+You play as Erin, an adventurer drawn into the heart of the crisis, accompanied by Milo, a loyal hamster companion 
+who proves essential in navigating the world’s hidden paths and forgotten structures.
 </p>
 
 <p>
-As the mist continues to spread, Eryn must travel through corrupted regions, uncover the origins of the plague, and unlock elemental powers sealed within ancient temples. These abilities become key to overcoming increasingly dangerous threats and accessing areas long lost to corruption.
+As the mist continues to spread, Erin must travel through corrupted regions, uncover the origins of the plague, 
+and unlock elemental powers sealed within ancient temples. These abilities become key to overcoming increasingly dangerous threats 
+and accessing areas long lost to corruption.
 </p>
 
 <p>
-At the centre of it all lies a corrupted force controlled by the evil rat Nox, whose influence has twisted the forest into something unrecognisable. To restore balance, Eryn must confront this source and bring an end to the spreading darkness.
+At the centre of it all lies a corrupted force controlled by the evil rat Nox, whose influence has twisted the forest 
+into something unrecognisable. To restore balance, Erin must confront this source and bring an end to the spreading darkness.
 </p>
 
 </div>
@@ -282,7 +148,7 @@ At the centre of it all lies a corrupted force controlled by the evil rat Nox, w
 
 <div class="about-dev">
 
-<img src="MyPhoto.jpg" alt="Developer Photo">
+<img src="Images/MyPhoto.jpg" alt="Developer Photo">
 
 <div>
 <h3>Brona Keevers-Roux</h3>
