@@ -137,16 +137,15 @@ p{
 }
 
 .card{
+    position:relative;
+    display:block;
     background:#111814;
     padding:25px;
+    padding-bottom:40px;
     border-radius:14px;
     border:1px solid #1f2a23;
-
     text-decoration:none;
-    color:inherit;
-    display:block;
-
-    transition:0.25s ease;
+    color:white;
 }
 
 .card h3{
@@ -157,6 +156,15 @@ p{
     transform:translateY(-5px);
     border-color:#72ff8f;
 }
+
+.card-arrow{
+    position:absolute;
+    bottom:15px;
+    right:20px;
+    font-size:20px;
+    color:#72ff8f;
+}
+
 .screenshot{
     width:100%;
     border-radius:12px;

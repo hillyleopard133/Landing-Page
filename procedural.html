@@ -18,7 +18,7 @@
 <h1>Temples</h1>
 
 <p>
-Short description of the feature. Keep this consistent with your card tone.
+Explore procedurally generated temples, activate relics and defeat bosses to unlock elemental powers.
 </p>
 
 <a href="index.html" class="btn secondary">← Back to Home</a>
@@ -35,68 +35,81 @@ Short description of the feature. Keep this consistent with your card tone.
     <source src="Videos/ProceduralGeneration.mp4" type="video/mp4">
 </video>
 
-<p>
-Strategic battles against corrupted wildlife using reactive enemy AI.
-</p>
-
 </div>
 </section>
 
-
-<!-- CONTENT SECTION -->
-<section>
+<!-- Overview -->
+<section class="secondary">
 <div class="container">
 
 <h2>Overview</h2>
 
 <p>
-Write a slightly expanded explanation of this feature here. This is where you go into more detail than the card on the homepage.
+The temple system uses grid-based procedural generation to create randomly structured layouts within defined constraints. 
+Generation begins by placing basic rooms to form the core grid, expanding outward from a central spawn point in branching paths.
 </p>
 
 <p>
-Keep paragraphs short and readable so it still feels like your UI style.
+Once the base layout is created, it is validated against constraints such as minimum and maximum room counts. 
+If valid, special rooms are assigned: relic and boss rooms are placed in the furthest locations from the spawn, treasure rooms are 
+distributed among remaining spaces, and enemies are then spawned throughout the temple.
+</p>
+
+<p>
+Find and activate all relics within the temple to unlock the final boss room. 
+Defeat the boss to unlock the elemental power associated with that temple. 
+Progress through increasingly difficult temples as new abilities are gained.
 </p>
 
 </div>
 </section>
 
 
-<!-- OPTIONAL: MECHANICS / DETAILS -->
-<section class="secondary">
-<div class="container">
-
-<h2>How It Works</h2>
-
-<p>
-Explain gameplay systems, mechanics, or behaviour here (combat logic, puzzles, AI, etc).
-</p>
-
-</div>
-</section>
-
-
-<!-- OPTIONAL: IMAGE / SCREENSHOT SECTION -->
+<!-- MECHANICS / DETAILS -->
 <section>
 <div class="container">
 
-<h2>In-Game Examples</h2>
+<h2>Mechanics</h2>
 
-<div class="gallery">
+<!-- General -->
+<div class="mechanic">
 
-<img src="Screenshots/example1.png" class="screenshot" alt="Example 1">
-<img src="Screenshots/example2.png" class="screenshot" alt="Example 2">
+<img src="Screenshots/combat.png" alt="Combat System">
+
+<div>
+<h3>Turn-Based Combat</h3>
+<p>
+Take turns selecting actions against AI-controlled enemies in turn-based combat. 
+Choose a party member and target enemies using the on-screen indicators.
+</p>
+</div>
 
 </div>
+
+<!-- General -->
+<div class="mechanic">
+
+<img src="Screenshots/combat.png" alt="Combat System">
+
+<div>
+<h3>Turn-Based Combat</h3>
+<p>
+Take turns selecting actions against AI-controlled enemies in turn-based combat. 
+Choose a party member and target enemies using the on-screen indicators.
+</p>
+</div>
+
+</div>
+
 
 </div>
 </section>
-
 
 <!-- CTA -->
 <section class="secondary">
 <div class="container" style="text-align:center;">
 
-<h2>Return to Game</h2>
+<h2>Return to The Mist</h2>
 
 <a href="index.html" class="btn">Back to Main Page</a>
 
