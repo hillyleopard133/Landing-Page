@@ -85,6 +85,25 @@ p{
     gap:25px;
 }
 
+.ai-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.ai-block img{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 14px;
+    border: 1px solid #1f2a23;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+    display: block;
+    margin: 0 auto;
+}
+
 .mechanic{
     display:flex;
     gap:40px;

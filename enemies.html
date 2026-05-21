@@ -18,7 +18,8 @@
 <h1>Enemies</h1>
 
 <p>
-Short description of the feature. Keep this consistent with your card tone.
+Enemies use A* pathfinding and a finite state machine to navigate the world and react to player actions, 
+with combat behaviour driven by a points-based system.
 </p>
 
 <a href="index.html" class="btn secondary">← Back to Home</a>
@@ -46,53 +47,70 @@ Short description of the feature. Keep this consistent with your card tone.
 <h2>Overview</h2>
 
 <p>
-Write a slightly expanded explanation of this feature here. This is where you go into more detail than the card on the homepage.
+Enemy behaviour is split into two core systems: world navigation AI and combat decision-making AI. 
+Together, these systems control how enemies move through the environment, detect the player, and respond during encounters.
 </p>
 
 <p>
-Keep paragraphs short and readable so it still feels like your UI style.
+World navigation governs movement and engagement using pathfinding and state-based behaviour, 
+while combat AI determines how enemies act once a battle has begun.
 </p>
+
 
 </div>
 </section>
 
-
-<!-- MECHANICS / DETAILS -->
 <section>
 <div class="container">
 
-<h2>Mechanics</h2>
+<div class="ai-block">
+<h2>World Navigation AI</h2>
 
-<!-- General -->
-<div class="mechanic">
+<p>
+Enemy behaviour is driven by a finite state machine with four core states: wander, patrol, chase, and attack. 
+State transitions are based on the player's distance from the enemy.
+</p>
+
+<p>
+When the player enters detection range, enemies switch to chase behaviour. 
+If the player enters attack range, combat is triggered and the encounter transitions to the combat screen. 
+All nearby enemies are pulled into the encounter for simultaneous multi-enemy combat.
+</p>
+
+<p>
+Navigation uses A* pathfinding based on collision tiles and preferred path tiles, allowing enemies to patrol constrained areas 
+while still responding dynamically to the player.
+</p>
+
+<p>
+To maintain performance, pathfinding calculations are distributed across multiple frames using frame allocation, 
+preventing all enemies from recalculating paths simultaneously.
+</p>
+
+<img src="Screenshots/fsm.png" alt="Finite State Machine">
+
+</div>
+
+<div class="ai-block">
+<h2>Combat Decision System</h2>
+
+<p>
+Combat AI uses a points-based scoring system to evaluate available actions each turn. 
+Actions are scored based on the current combat state, including enemy health, player health, 
+enemy weaknesses and resistances, and recent player actions.
+</p>
+
+<p>
+The highest-scoring action is selected, allowing enemies to choose between attacking specific party members or using healing abilities when available.
+</p>
+
+<p>
+A controlled randomisation factor is applied to prevent fully optimal behaviour, ensuring encounters remain fair and dynamic.
+</p>
 
 <img src="Screenshots/combat.png" alt="Combat System">
 
-<div>
-<h3>Turn-Based Combat</h3>
-<p>
-Take turns selecting actions against AI-controlled enemies in turn-based combat. 
-Choose a party member and target enemies using the on-screen indicators.
-</p>
 </div>
-
-</div>
-
-<!-- General -->
-<div class="mechanic">
-
-<img src="Screenshots/combat.png" alt="Combat System">
-
-<div>
-<h3>Turn-Based Combat</h3>
-<p>
-Take turns selecting actions against AI-controlled enemies in turn-based combat. 
-Choose a party member and target enemies using the on-screen indicators.
-</p>
-</div>
-
-</div>
-
 
 </div>
 </section>
