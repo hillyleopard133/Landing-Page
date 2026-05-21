@@ -35,6 +35,12 @@ Explore procedurally generated temples, activate relics and defeat bosses to unl
     <source src="Videos/ProceduralGeneration.mp4" type="video/mp4">
 </video>
 
+<h2>Temple Gameplay</h2>
+
+<video class="feature-video" controls>
+    <source src="Videos/Temple.mp4" type="video/mp4">
+</video>
+
 </div>
 </section>
 
@@ -69,33 +75,79 @@ Progress through increasingly difficult temples as new abilities are gained.
 <section>
 <div class="container">
 
-<h2>Mechanics</h2>
+<h2>Temple Systems</h2>
 
-<!-- General -->
+<!-- Layout -->
 <div class="mechanic">
 
-<img src="Screenshots/combat.png" alt="Combat System">
+<img src="Screenshots/procedural.png" alt="Procedural Generation">
 
 <div>
-<h3>Turn-Based Combat</h3>
+<h3>Procedural Layout Generation</h3>
 <p>
-Take turns selecting actions against AI-controlled enemies in turn-based combat. 
-Choose a party member and target enemies using the on-screen indicators.
+Temples are generated on a grid using branching paths from a central spawn room. 
+Layouts are randomised within defined constraints to ensure varied and valid dungeon structures. 
+Rooms are instantiated using prefabs during generation to construct the final temple layout.
 </p>
 </div>
 
 </div>
 
-<!-- General -->
+<!-- Special Rooms -->
 <div class="mechanic">
 
-<img src="Screenshots/combat.png" alt="Combat System">
+<img src="Screenshots/rooms.png" alt="Room Types">
 
 <div>
-<h3>Turn-Based Combat</h3>
+<h3>Special Room Placement</h3>
 <p>
-Take turns selecting actions against AI-controlled enemies in turn-based combat. 
-Choose a party member and target enemies using the on-screen indicators.
+Once a valid layout is created, relic, boss, and treasure rooms are placed within the generated structure 
+based on distance from the spawn and available room slots.
+</p>
+</div>
+
+</div>
+
+<!-- Relics -->
+<div class="mechanic">
+
+<img src="Screenshots/relics.png" alt="Relics">
+
+<div>
+<h3>Relic Activation</h3>
+<p>
+Relics must be activated throughout the temple to unlock the final boss encounter and progress through the temple.
+The amount of relics required to unlock the boss room is displayed below the minimap.
+</p>
+</div>
+
+</div>
+
+<!-- Completion -->
+<div class="mechanic">
+
+<img src="Screenshots/boss-fight.png" alt="Boss Fight">
+
+<div>
+<h3>Temple Completion</h3>
+<p>
+Defeating the boss completes the temple and unlocks a new elemental ability tied to that region. 
+The player can then progress through the exit in the boss room.
+</p>
+</div>
+
+</div>
+
+<!-- Treasure -->
+<div class="mechanic">
+
+<img src="Screenshots/treasure.png" alt="Treasure Chests">
+
+<div>
+<h3>Treasure</h3>
+<p>
+Treasure chests are distributed throughout temples and tracked as a found/total count in the UI. 
+Each chest contains a random item selected from a predefined loot pool, rewarding exploration and full dungeon completion.
 </p>
 </div>
 
