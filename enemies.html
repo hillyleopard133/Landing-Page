@@ -84,7 +84,13 @@ while still responding dynamically to the player.
 
 <p>
 To maintain performance, pathfinding calculations are distributed across multiple frames using frame allocation, 
-preventing all enemies from recalculating paths simultaneously.
+preventing all enemies from recalculating paths simultaneously within the same update cycle.
+</p>
+
+<p>
+During chase behaviour, A* pathfinding is further optimised by limiting how often new paths are calculated. 
+A new path is only calculated after a set time interval or when the player has moved beyond a defined distance threshold, 
+reducing unnecessary recalculations while maintaining accurate tracking.
 </p>
 
 <img src="Screenshots/fsm.png" alt="Finite State Machine">
@@ -106,6 +112,11 @@ The highest-scoring action is selected, allowing enemies to choose between attac
 
 <p>
 A controlled randomisation factor is applied to prevent fully optimal behaviour, ensuring encounters remain fair and dynamic.
+</p>
+
+<p>
+The combat UI provides real-time visual indicators showing the active enemy and their selected target, 
+improving readability of turn order and AI decision outcomes during encounters.
 </p>
 
 <img src="Screenshots/combat.png" alt="Combat System">
